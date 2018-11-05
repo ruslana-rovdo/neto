@@ -68,7 +68,8 @@ a {
     display: flex;
     flex-wrap: wrap; 
     align-items: center;
-    background: url("../images/football_767.jpg") no-repeat;  
+    background: url("../images/football_767.jpg") no-repeat;
+    background-size: cover;
   }
 
   .header-content {
