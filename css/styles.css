@@ -97,14 +97,23 @@ a {
     background-color: #ffffff;     
   }
   .athlets div {
-    padding: 20px;
+    padding: 10px 20px 0 20px;
   }
 
   .athlets {
     font-weight: bold;
   }
   
+  .bg-img {       
+    width: 100%;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: -10px;
+    text-align: center;
+  }
+  
   .athlets h1 {
+    margin-bottom: 235px;
     color: #e7e7e7;
     font-size: 50px;
     text-transform: uppercase;
