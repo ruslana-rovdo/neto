@@ -30,20 +30,17 @@ a {
 }
 
 .btn {
-  display: flex;
+  display: flex;  
+  align-items: center;
+  justify-content: center;  
   margin: 18px auto;
-	color: #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
 	border-radius: 20px;
 	background-color: #5e42b0;	    
 }
-.btn-link {
-  display: flex;
-  align-items: center; 
-  margin-left: 80px;  
-}
-.btn-txt  {
-   text-transform: uppercase;
-   color: white;
+
+.btn-txt  {    
    margin-left: 10px;
    font-size: 8px; 
 }
@@ -57,7 +54,7 @@ a {
   height: 40px;    
 }
 
-@media (max-width: 320px) {
+@media (max-width: 640px) {
   body {
   display: flex;   
   flex-wrap: wrap;
@@ -66,9 +63,8 @@ a {
   .header {
     width: 100%;
     display: flex;
-    flex-wrap: wrap; 
-    align-items: center;
-    background: url("../images/football_767.jpg") no-repeat;
+    flex-wrap: wrap;     
+    background: url("../images/football_767.jpg") center no-repeat;
     background-size: cover;
   }
 
@@ -89,7 +85,7 @@ a {
   .header h1 {
     margin-bottom: 15px;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: bold;
   }
 
   article {
@@ -148,8 +144,11 @@ a {
   
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
-  
+@media (min-width: 641px) and (max-width: 768px) {
+  .header h1 {
+    margin-bottom: 15px;
+    font-size: 64px;  
+  } 
 }
 
 @media (min-width: 769px) and (max-width: 1920px) {
