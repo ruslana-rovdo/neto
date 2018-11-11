@@ -33,6 +33,7 @@ a {
   cursor: pointer;
 }
 
+
 /* COMMON */
 .downloads {
   display: flex;
@@ -50,7 +51,6 @@ a {
 .downloads .btn .btn-icon {
   fill: #ffffff;
 }
-
 
 /* HEADER */
 .header {
@@ -95,13 +95,13 @@ a {
   color: #ffffff;
 }
 .header .title span:first-of-type {
-  margin-left: 5%;
-  margin-right: 20%;
+  padding-left: 5%;
+  padding-right: 20%;
   align-self: flex-start;
 }
 .header .title span:last-of-type {
-  margin-left: 20%;
-  margin-right: 5%;
+  padding-left: 20%;
+  padding-right: 5%;
   align-self: flex-end;
 }
 
@@ -156,8 +156,6 @@ a {
 .footer .title-text p {
   color: #a496ca;
 }
-.footer .copyright {}
-
 
 /* ARTICLE */
 .article .wrapper {
@@ -190,11 +188,11 @@ a {
   background-color: #5e42b0;
   color: #ffffff;
 }
-.article .list .list-prefix {
+.article .list-prefix {
   position: relative;
   color: #000000;
 }
-.article .list .list-prefix::after {
+.article .list-prefix::after {
   position: absolute;
   display: block;
   bottom: 0;
@@ -207,11 +205,11 @@ a {
 .article .list.growth .list-prefix::after {
   background-color: #ffffff;
 }
-.article .list .list-title {
+.article .list-title {
   color: #c1c1c1;
   text-transform: uppercase;
 }
-.article .list .list-text {
+.article .list-text {
   letter-spacing: 0.05rem;
 }
 
@@ -238,7 +236,6 @@ a {
 .action .description-title {
   text-transform: uppercase;
 }
-.action .description-text {}
 .action .description-prefix {
   display: flex;
   justify-content: center;
@@ -334,7 +331,6 @@ a {
     margin-bottom: 10px;
   }
 
-
   /* ARTICLE */
   .article .wrapper {
     min-height: 780px;
@@ -344,9 +340,9 @@ a {
     flex-wrap: wrap;
     align-content: center;
     flex-grow: 1;
-    padding-top: 15px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 15px;
     font-size: 50px;
   }
   .article .image {
@@ -358,7 +354,7 @@ a {
     margin-bottom: -55px;
   }
   .article.players .image {
-    margin-bottom: -55px;
+    margin-bottom: -35px;
   }
   .article .list {
     padding-left: 20px;
@@ -370,16 +366,16 @@ a {
     padding-top: 80px;
     background-color: #fafafa;
   }
-  .article .list .list-prefix {
+  .article .list-prefix {
     padding-bottom: 3px;
     font-size: 14px;
     vertical-align: 7px;
   }
-  .article .list .list-title {
+  .article .list-title {
     padding-bottom: 20px;
     font-size: 23px;
   }
-  .article .list .list-text {
+  .article .list-text {
     font-size: 15px;
     line-height: 18px;
   }
@@ -391,10 +387,11 @@ a {
   .action .image {
     width: 100%;
   }
-  .action .description {}
+  .action .description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .action .description-title {
-    margin-left: 20px;
-    margin-right: 20px;
     margin-top: 33px;
     line-height: 34px;
     font-size: 28px;
@@ -402,8 +399,6 @@ a {
     color: #e7e7e7;
   }
   .action .description-text {
-    margin-left: 20px;
-    margin-right: 20px;
     margin-top: 22px;
     margin-bottom: 78px;
     font-size: 16px;
@@ -412,7 +407,6 @@ a {
   .action .description-prefix {
     height: 70px;
     width: 70px;
-    left: 20px;
     margin-top: -56px;
   }
   .action .description-prefix span {
@@ -420,6 +414,7 @@ a {
     line-height: 34px;
   }
 }
+
 
 @media (min-width: 641px) and (max-width: 960px) {
   /* COMMON */
@@ -490,22 +485,23 @@ a {
     margin-bottom: 24px;
   }
 
-
   /* ARTICLE */
   .article .wrapper {
     min-height: 768px;
   }
   .article .title {
-    padding-top: 20px;
+    margin-top: 20px;
     font-size: 80px;
   }
-  .article.athlets .title {
+  .article.athlets .title,
+  .article.athlets .list {
     padding-left: 40%;
     padding-right: 4%;
   }
-  .article.players .title {
+  .article.players .title,
+  .article.players .list {
     padding-left: 4%;
-    padding-right: 40%;
+    padding-right: 35%;
   }
   .article .image {
     position: absolute;
@@ -518,26 +514,18 @@ a {
     left: 54%;
     top: 65px;
   }
-  .article.athlets .list {
-    padding-left: 40%;
-    padding-right: 4%;
-  }
-  .article.players .list {
-    padding-left: 4%;
-    padding-right: 35%;
-  }
   .article .list.connection {
     background-color: #ffffff;
   }
-  .article .list .list-prefix {
+  .article .list-prefix {
     padding-bottom: 5px;
     font-size: 18px;
     vertical-align: 10px;
   }
-  .article .list .list-title {
+  .article .list-title {
     font-size: 36px;
   }
-  .article .list .list-text {
+  .article .list-text {
     font-size: 16px;
     line-height: 28px;
   }
@@ -549,18 +537,17 @@ a {
   .action .image {
     width: 100%;
   }
-  .action .description {}
+  .action .description {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
   .action .description-title {
-    margin-left: 32px;
-    margin-right: 32px;
     margin-top: 80px;
     line-height: 80px;
     font-size: 80px;
     color: #c1c1c1;
   }
   .action .description-text {
-    margin-left: 32px;
-    margin-right: 32px;
     margin-top: 35px;
     margin-bottom: 100px;
     line-height: 28px;
@@ -570,7 +557,6 @@ a {
   .action .description-prefix {
     height: 116px;
     width: 116px;
-    left: 32px;
     margin-top: -80px;
   }
   .action .description-prefix span {
@@ -578,6 +564,7 @@ a {
     font-size: 24px;
   }
 }
+
 
 @media (min-width: 961px) {
   /* COMMON */
@@ -642,7 +629,6 @@ a {
     margin-bottom: 52px;
   }
 
-
   /* ARTICLE */
   .article .wrapper {
     min-height: 900px;
@@ -651,11 +637,13 @@ a {
     margin-top: 118px;
     font-size: 80px;
   }
-  .article.athlets .title {
+  .article.athlets .title,
+  .article.athlets .list {
     padding-left: 50%;
     padding-right: 10%;
   }
-  .article.players .title {
+  .article.players .title,
+  .article.players .list {
     padding-left: 10%;
     padding-right: 50%;
   }
@@ -670,31 +658,22 @@ a {
     left: 45%;
     top: 25px;
   }
-  .article.athlets .list {
-    padding-left: 50%;
-    padding-right: 10%;
-  }
-  .article.players .list {
-    padding-left: 10%;
-    padding-right: 50%;
-  }
   .article .list.connection {
     background-color: #ffffff;
   }
-  .article .list .list-prefix {
+  .article .list-prefix {
     padding-bottom: 5px;
     font-size: 18px;
     vertical-align: 10px;
   }
-  .article .list .list-title {
+  .article .list-title {
     font-size: 36px;
   }
-  .article .list .list-text {
+  .article .list-text {
     font-size: 20px;
   }
 
   /* ACTION */
-  .action .wrapper {}
   .action .image {
     min-width: 50%;
     flex-basis: 50%;
@@ -732,13 +711,13 @@ a {
   }
   .action:nth-of-type(even) .description-title,
   .action:nth-of-type(even) .description-text {
-    margin-left: 5%;
-    margin-right: 126px;
+    padding-left: 5%;
+    padding-right: 126px;
   }
   .action:nth-of-type(odd) .description-title,
   .action:nth-of-type(odd) .description-text {
-    margin-left: 126px;
-    margin-right: 5%;
+    padding-left: 126px;
+    padding-right: 5%;
   }
   .action:nth-of-type(even) .description-prefix {
     right: -84px;
@@ -747,6 +726,7 @@ a {
     left: -84px;
   }
 }
+
 
 @media (min-width: 1921px) {
   .wrapper {
