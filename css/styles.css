@@ -141,7 +141,12 @@ a {
   align-items: center;
 }
 .footer .title-logo {
-  background-image: linear-gradient(0, #50329c 0, #5e3db3 51%, #7751db 100%);
+  background: #7751db; /* Old browsers */
+  background: -moz-linear-gradient(top, #7751db 0%, #5e3db3 50%, #50329c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #7751db 0%,#5e3db3 50%,#50329c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #7751db 0%,#5e3db3 50%,#50329c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7751db', endColorstr='#50329c',GradientType=0 ); /* IE6-9 */
+/*  background-image: linear-gradient(0, #50329c 0, #5e3db3 51%, #7751db 100%);*/
 }
 .footer .title-logo-icon {
   fill: #ffffff;
